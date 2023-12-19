@@ -1,0 +1,27 @@
+
+P
+ src/main/java/fr/dawan/Main.java,a\f\af178839eb595c94b6eb10ac6424ff8f6653ac6e
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+d
+4src/main/java/fr/dawan/business/article/Article.java,2\1\215114b33d325a374507cc44c43db4bb20e8dfd6
+n
+>src/main/java/fr/dawan/business/article/ArticleRepository.java,3\0\306d7a4c1270f639b0cf26061940b06b82fbd754
+k
+;src/main/java/fr/dawan/business/article/ArticleService.java,9\1\913fd9bb58963190c7ca1cd2f9562700417cde04
+o
+?src/main/java/fr/dawan/business/article/ArticleServiceImpl.java,4\9\497daf912e03abca3c082394e6f3f5d61e3e2855
+n
+>src/main/java/fr/dawan/business/article/ArticleController.java,1\b\1b71f4ea2d732d63161e2a2265a9c7acc5bfb8de
+g
+7src/main/java/fr/dawan/business/generic/BaseEntity.java,0\2\023ca5982c18f2a647396a4bb2354d427a7f9e87
+l
+<src/main/java/fr/dawan/business/generic/AbstractService.java,9\f\9f6fdb5bc4754697d48a435c0e43c450828629f3
+p
+@src/main/java/fr/dawan/business/generic/AbstractServiceImpl.java,a\d\ad37e42db19d51c2b2da4608c29db8afd07efee3
+k
+;src/main/java/fr/dawan/business/generic/GenericService.java,b\1\b1ea6447af35262d876e5ae565f4fa5a1cd5ad6c
+o
+?src/main/java/fr/dawan/business/generic/GenericServiceImpl.java,4\e\4ecd7c4e66724f86d5a9928dfd91ae6143c6601b
+n
+>src/main/java/fr/dawan/business/generic/GenericController.java,d\5\d5b8d0491fac1974080d77f5a895db118410db8b
