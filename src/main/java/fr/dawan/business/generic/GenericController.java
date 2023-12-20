@@ -5,27 +5,31 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+import java.util.Optional;
+
 @RequiredArgsConstructor
-public class GenericController<E extends BaseEntity, S extends GenericService<E>> {
-    public final S service;
+public abstract class GenericController<
+        D,
+        S extends GenericService<D>
+        > {
+    protected final S service;
 
     @GetMapping
-    public Page<E> findAll(Pageable pageable) {
+    public Page<D> findAll(Pageable pageable) {
         return service.findAll(pageable);
     }
 
-    @GetMapping("/{id}")
-    public E findById(@PathVariable long id) {
+    @GetMapping("/{id:[1-9]+}")
+    public Optional<D> findById(@PathVariable long id) {
         return service.findById(id);
     }
 
     @PostMapping
-    public E saveOrUpdate(E entity) {
+    public D saveOrUpdate(@RequestBody D entity) {
         return service.saveOrUpdate(entity);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id:[1-9]+}")
     public void deleteById(@PathVariable long id) {
         service.deleteById(id);
     }

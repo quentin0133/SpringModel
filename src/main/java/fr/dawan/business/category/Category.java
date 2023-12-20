@@ -1,24 +1,26 @@
-package fr.dawan.business.article;
+package fr.dawan.business.category;
 
-import fr.dawan.business.category.Category;
+import fr.dawan.business.article.Article;
 import fr.dawan.business.generic.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "articles")
-public class Article extends BaseEntity {
-    private String nom;
-    private double prix;
-    @ManyToOne
-    private Category category;
+@Table(name = "categories")
+public class Category extends BaseEntity {
+    private String name;
+    @OneToMany(mappedBy = "category")
+    private List<Article> articles;
 }
