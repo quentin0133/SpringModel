@@ -15,8 +15,8 @@ public class ArticleController extends GenericController<ArticleDto, ArticleServ
     }
 
     @GetMapping("/{title:[A-Za-z1-9]*[A-Za-z].[A-Za-z1-9]*}")
-    public List<ArticleDto> findByNom(@PathVariable String title, Pageable pageable) {
-        return service.findByNom(title, pageable).getContent();
+    public Page<ArticleDto> findByNom(@PathVariable String title, Pageable pageable) {
+        return service.findByNom(title, pageable);
     }
 
     @GetMapping("/byCategorie/{name:[A-Za-z1-9]*[A-Za-z].[A-Za-z1-9]*}")
