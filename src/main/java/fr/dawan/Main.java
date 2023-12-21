@@ -5,10 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@Slf4j
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-        log.info("Hello webhook !!!");
+        System.out.println("Hello webhook !!!");
     }
 }
