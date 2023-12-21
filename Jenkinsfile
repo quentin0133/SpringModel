@@ -35,7 +35,7 @@ pipeline {
 
         stage('Start Docker Container') {
             steps {
-                bat "docker run --name awesomeproject -d -p 33470:8080 awesomeproject:lastest awesome-project-1.0-SNAPSHOT.jar"
+                bat "docker run --name awesomeproject -d -p 33470:8080 awesomeproject:lastest awesome-project.jar"
             }
         }
     }
