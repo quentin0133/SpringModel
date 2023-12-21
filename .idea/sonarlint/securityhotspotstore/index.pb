@@ -41,3 +41,14 @@ p
 @src/main/java/fr/dawan/business/category/CategoryController.java,5\2\5276b2f4ce2adc95d4bee3f47d9a341fac5d9b49
 j
 :src/main/java/fr/dawan/business/article/ArticleMapper.java,0\0\004427bfebc91f5f4dce453850048d79807cc25c
+o
+?src/main/java/fr/dawan/business/article/ArticleCategoryDto.java,0\2\02d21b8c03bf3756f0fe39edd01b204cf9794b63
+p
+@src/main/java/fr/dawan/business/category/CategoryArticleDto.java,2\b\2b3b3c0dfbc88c178b5ab417208c34819adf4811
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+T
+$src/test/java/fr/dawan/MainTest.java,b\a\ba00da37a3b50e3ac5a20fcc7aa743daf4fb8f7c
+u
+Esrc/test/java/fr/dawan/business/category/CategoryServiceImplTest.java,9\7\97377a2f49bcdaf72c092f697d5f395d6dcc6d71
