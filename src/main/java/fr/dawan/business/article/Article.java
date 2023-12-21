@@ -10,13 +10,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "articles")
-public class Article extends BaseEntity {
+public class Article extends BaseEntity implements Serializable {
     private String nom;
     private double prix;
     @ManyToOne

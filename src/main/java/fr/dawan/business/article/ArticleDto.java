@@ -12,7 +12,5 @@ public class ArticleDto {
     private int version;
     private String nom;
     private double prix;
-    /*private String categoryName;
-    private long idCategory;*/
     private ArticleCategoryDto category;
 }

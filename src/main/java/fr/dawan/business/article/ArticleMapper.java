@@ -7,8 +7,4 @@ import org.mapstruct.MappingConstants;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface ArticleMapper extends GenericMapper<Article, ArticleDto> {
-    /*@Override
-    @Mapping(source = "category.name", target = "categoryName")
-    @Mapping(source = "category.id", target = "idCategory")
-    ArticleDto toDto(Article entity);*/
 }
