@@ -12,8 +12,9 @@ public class ArticleServiceImpl extends GenericServiceImpl<Article, ArticleRepos
     }
 
     @Override
-    public Page<Article> findByNom(String title, Pageable page) {
-        return repository.findByNomLike("%" + title + "%", page);
+    public Page<ArticleDto> findByNom(String title, Pageable page) {
+        Page<Article> byNomLike = repository.findByNomLike("%" + title + "%", page);
+        return byNomLike.map(mapper::toDto);
     }
 
     @Override

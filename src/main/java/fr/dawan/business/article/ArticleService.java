@@ -8,6 +8,6 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 public interface ArticleService extends GenericService<ArticleDto> {
-    Page<Article> findByNom(String title, Pageable page);
+    Page<ArticleDto> findByNom(String title, Pageable page);
     Page<Article> findByCategoryNom(String name, Pageable page);
 }

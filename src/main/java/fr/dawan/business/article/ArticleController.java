@@ -14,12 +14,12 @@ public class ArticleController extends GenericController<ArticleDto, ArticleServ
         super(service);
     }
 
-    @GetMapping("/{title:[A-Za-z]+}")
-    public Page<Article> findByNom(@PathVariable String title, Pageable pageable) {
-        return service.findByNom(title, pageable);
+    @GetMapping("/{title:[A-Za-z1-9]*[A-Za-z].[A-Za-z1-9]*}")
+    public List<ArticleDto> findByNom(@PathVariable String title, Pageable pageable) {
+        return service.findByNom(title, pageable).getContent();
     }
 
-    @GetMapping("/byCategorie/{name:[A-Za-z]+}")
+    @GetMapping("/byCategorie/{name:[A-Za-z1-9]*[A-Za-z].[A-Za-z1-9]*}")
     public Page<Article> findByCategoryName(@PathVariable String name, Pageable pageable) {
         return service.findByCategoryNom(name, pageable);
     }
