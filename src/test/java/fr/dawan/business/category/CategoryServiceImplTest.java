@@ -37,7 +37,7 @@ class CategoryServiceImplTest {
         Pageable pageable = Pageable.unpaged();
         Category category1 = new Category("Sport", null);
         Category category2 = new Category("Technologie", null);
-        Page<Category> categoryList = new PageImpl<Category>(List.of(category1, category2));
+        Page<Category> categoryList = new PageImpl<>(List.of(category1, category2));
 
         CategoryDto categoryDto1 = new CategoryDto(0L, 0, category1.getName(), null, 0);
         CategoryDto categoryDto2 = new CategoryDto(0L, 0, category2.getName(),null, 0);
