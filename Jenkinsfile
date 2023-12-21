@@ -27,5 +27,11 @@ pipeline {
                 }
             }
         }
+
+        stage('Start Docker Container') {
+            steps {
+                bat "docker run --name awesomeproject -d -p 33470:8080 awesomeproject:lastest awesome-project.jar"
+            }
+        }
     }
 }
