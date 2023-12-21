@@ -19,5 +19,13 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    dockerImage = docker.build('awesomeproject:lastest')
+                }
+            }
+        }
     }
 }
