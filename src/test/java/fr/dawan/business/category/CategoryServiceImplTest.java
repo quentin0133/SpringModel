@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
-@ActiveProfiles("test")
 class CategoryServiceImplTest {
     private CategoryServiceImpl service;
 
